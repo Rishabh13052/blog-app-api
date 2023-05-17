@@ -46,7 +46,6 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public UserDto createUser(UserDto userDto) {
-		// TODO Auto-generated method stub
 		User user=this.dtoToUser(userDto);
 		User saveduser=userRepository.save(user);
 		return this.userToDto(saveduser);
